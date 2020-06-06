@@ -1,5 +1,5 @@
 function insetSort(arr){
-  let len = arr.length
+  let len = arr.length, tem
   for(let i=1; i<len; i++){
     tem = arr[i]
     while(i>0 && tem<arr[i-1]){

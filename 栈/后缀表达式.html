@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./stack.js"></script>
+    <script>
+        let arr = ['4, '13', '5', '/', '+']
+        let stack1 = new Stack()
+        let stack2 = new Stack()  // 不用两个栈
+        for(let i=0; i<arr.length; i++){
+            if(typeof(Number(arr[i])) == 'number'){
+                stack1.push(arr[i])
+            }else{
+                stack2.push(arr[i])
+            }
+        }
+    </script>
+</body>
+</html>
